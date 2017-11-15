@@ -1,0 +1,69 @@
+struct ADDR_INFO
+{
+void (*pfunc)();
+char szSite[256];
+char szIp[32];
+long lIp;
+int iPort;
+int iEnd;
+};
+
+struct fd_set {
+        u_int fd_count;               /* how many are SET? */
+        SOCKET  fd_array[FD_SETSIZE];   /* an array of SOCKETs */
+};
+
+struct SOCKET_INFO
+{
+void (*pfunc)();
+int s;
+sockaddr_in addr;
+long cmd;
+char szBuf1[488];
+};
+
+AF_UNSPEC,
+AF_UNIX,
+AF_INET,
+AF_IMPLINK,
+AF_PUP,
+AF_CHAOS,
+AF_NS,
+AF_IPX,
+AF_ISO,
+AF_OSI,
+AF_ECMA,
+AF_DATAKIT,
+AF_CCITT,
+AF_SNA,
+AF_DECnet,
+AF_DLI,
+AF_LAT,
+AF_HYLINK,
+AF_APPLETALK,
+AF_NETBIOS,
+AF_VOICEVIEW,
+AF_FIREFOX,
+AF_UNKNOWN1,
+AF_BAN,
+AF_ATM,
+AF_INET6,
+AF_CLUSTER,
+AF_12844
+
+
+#define AF_MAX          26
+
+
+SOCK_STREAM,
+SOCK_DGRAM,
+SOCK_RAW,
+SOCK_RDM,
+SOCK_SEQPACKET
+
+162c
+122c
+122b
+102d
+
+3039
